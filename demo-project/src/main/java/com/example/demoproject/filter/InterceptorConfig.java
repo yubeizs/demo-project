@@ -16,7 +16,7 @@ public class InterceptorConfig extends WebMvcConfigurationSupport  {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry){
-        // 拦截所以请求
+        // 拦截所以请求。
         registry.addInterceptor(this.testInterceptor()).addPathPatterns("/**");
     }
 }
